@@ -14,275 +14,210 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <style>
-    body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-    }
-
-    h1 {
-      font-size:45px;
-      text-transform: uppercase;
-      color: #ffffff;
-      font-weight:900;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
-    h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-    }
-
-    .jumbotron {
-
-      color: #fff;
-      padding: 180px 25px;
-      background-color: black;
-      font-family: Montserrat, sans-serif;
-    }
-
-    .container-fluid {
-      padding: 60px 50px;
-    }
-
-    .bg-grey {
-      background-color: #f6f6f6;
-    }
-
-    .logo-small {
-      color: #061c3d;
-      font-size: 50px;
-    }
-    .logo-home {
-      color: #fff;
-      font-size: 25px;
-    }
-
-    .logo {
-      color: #061c3d;
-      font-size: 200px;
-    }
-
-    .thumbnail {
-      padding: 0 0 15px 0;
-      margin: 7%;
-
-      border: none;
-      border-radius: 0;
-    }
-
-    .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-    }
-
-    .carousel-control.right,
-    .carousel-control.left {
-      background-image: none;
-      color: #061c3d;
-    }
-
-    .carousel-indicators li {
-      border-color: #061c3d;
-    }
-
-    .carousel-indicators li.active {
-      background-color: #061c3d;
-    }
-
-    .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-    }
-
-    .item span {
-      font-style: normal;
-    }
-
-    .panel {
-      border: 1px solid #061c3d;
-      border-radius: 0 !important;
-      transition: box-shadow 0.5s;
-    }
-
-    .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
-    }
-
-    .panel-footer .btn:hover {
-      border: 1px solid #061c3d;
-      background-color: #fff !important;
-      color: #061c3d;
-    }
-
-    .panel-heading {
-      color: #fff !important;
-      background-color: #061c3d !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .panel-footer {
-      background-color: white !important;
-    }
-
-    .panel-footer h3 {
-      font-size: 32px;
-    }
-
-    .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #061c3d;
-      color: #fff;
-    }
-
-    .navbar {
-      background-color: #061c3d;
-      font-size: 10px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      font-family: Montserrat, sans-serif;
-      font-weight: bolder;
-    }
-
-    .navbar li a,
-    .navbar .navbar-brand {
-      color: #fff !important;
-    }
-
-    .navbar-nav li a:hover,
-    .navbar-nav li.active a {
-      color: #061c3d !important;
-      background-color: #005b88 !important;
-    }
-
-    .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-    }
-
-    .navbar-light .navbar-nav .nav-link.active {
-    background-color:#005b88;
-}
-
-    .slideanim {
-      visibility: hidden;
-    }
-
-    .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-    }
-
-    @keyframes slide {
-      0% {
-        opacity: 0;
-        transform: translateY(70%);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    }
-
-    @-webkit-keyframes slide {
-      0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-      }
-
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-      }
-
-      .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .logo {
-        font-size: 150px;
-      }
-    }
-
-    @media (min-width: 34em) {
-      .card-columns {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-      }
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="./css/val.css">
 </head>
 
-<body id="myPage" >
+<body id="myPage">
 
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-    <a class="navbar-brand" href="#myPage"  >VALOREGA</a>
+    <a class="navbar-brand" href="javascript:home()">&nbsp VALOREGA ACCOUNTING SERVICES</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><span class="fas fa-home logo-home"></span></li>
-        <li class="nav-item"><a class="nav-link " href="#myPage ">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
-        <li class="nav-item"><a class="nav-link" href="#industries">INDUSTRIES</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+        <li class="nav-item"><a class="nav-link " href="javascript:home()">HOME</a></li>
+        <li class=" dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            ABOUT US
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="javascript:about()">About Us</a>
+            <a class="dropdown-item" href="javascript:engagement()">Engagement Models</a>
+            <a class="dropdown-item" href="javascript:infosec()">Information Security</a>
+            <a class="dropdown-item" href="javascript:management()">Management</a>
+            <a class="dropdown-item" href="javascript:gallery()">Gallery</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="javascript:services()">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:industries()">INDUSTRIES</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
       </ul>
     </div>
 
   </nav>
   <br>
-  <div class="jumbotron text-center ">
-    <h1>Valorega Accounting Services</h1>
+  <div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/c2.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/c3.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/c2.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!-- Container (About Section) -->
+  <div id="main" class="container-fluid">
+    <div id="about" class="container-fluid ">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>Welcome To Valorega</h2><br>
+
+          <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
+            for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
+            CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
+            company’s operating costs, increasing profits and establishing benchmarks for superior governance and
+            conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
+            party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an
+            extensive
+            range of accounting back office services at competitive costs.</p>
+
+          <p>Valorega's finance and accounting outsourcing services are outlined to support the client by setting up
+            compliance and controls, equalizing expenditure and growth, cutting down the cash cycle and increasing the
+            ROI. Size doesn’t make a difference for us & every client is equally important for us. We seek to serve you
+            in
+            the most efficient manner.</p><br>
+          <h2>Why Valorega Accounting Services ?</h2><br>
+
+          <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
+            for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
+            CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
+            company’s operating costs, increasing profits and establishing benchmarks for superior governance and
+            conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
+            party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an
+            extensive
+            range of accounting back office services at competitive costs.</p>
+
+        </div>
+        <div class="col-sm-4">
+          <span class="fas fa-signal logo"></span>
+        </div>
+      </div>
+    </div>
+    
   </div>
 
-  <!-- Container (About Section) -->
+  <!-- Container (Services Section) -->
+
+
+
+  <!-- Container (Gallery Section) -->
+
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid text-center ">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="fas fa-map-marker-alt"></span> India</p>
+        <p><span class="fas fa-phone"></span> +91 120 232 3669</p>
+        <p><span class="fas fa-envelope"></span> info@valoregaresearch.com </p>
+      </div>
+
+    </div>
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="fas fa-chevron-up"></span>
+      </a>
+      <p>Copyright © 2020 Valorega Accounting Services. All rights reserved.</p>
+    </footer>
+  </div>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
+  <script>
+    function home()
+{
+  location.reload();
+  var element = document.querySelector("#myPage");
+element.scrollIntoView() 
+}
+    function gallery() {
+      document.getElementById("main").innerHTML = `<div id="gallery" class="container-fluid text-center ">
+    <h2>Gallery</h2><br>
+    <h4>Workspace</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-6">
+        <div class="thumbnail">
+          <img src="./images/front.jpg" alt="img not available">
+          <p><strong>Front</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="thumbnail">
+          <img src="./images/corridor.jpg" alt="img not available">
+          <p><strong>Corridor</strong></p>
+        </div>
+      </div>
+    </div><br>
+  </div>`
+  var element = document.querySelector("#myPage");
+element.scrollIntoView()  
+    }
+
+function about() {
+   document.getElementById("main").innerHTML = `
+    
   <div id="about" class="container-fluid ">
     <div class="row">
       <div class="col-sm-8">
@@ -302,23 +237,12 @@
           the most efficient manner.</p><br>
           <h2>Why Valorega Accounting Services ?</h2><br>
 
-        <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
-          for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
-          CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
-          company’s operating costs, increasing profits and establishing benchmarks for superior governance and
-          conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
-          party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an
-          extensive
-          range of accounting back office services at competitive costs.</p>
-
       </div>
       <div class="col-sm-4">
         <span class="fas fa-signal logo"></span>
       </div>
     </div>
-  </div>
-
-  <div class="container-fluid bg-grey">
+    </div>
     <div class="row">
       <div class="col-sm-4">
         <span class="fas fa-globe-americas logo slideanim"></span>
@@ -333,10 +257,13 @@
           actionable, high quality, customized, efficient, ethical and cost effective offshore research and analytics
           services to global clients in our domain.</p>
       </div>
-    </div>
-  </div>
+    </div>`
+    var element = document.querySelector("#main");
+element.scrollIntoView()  
+    }
 
-  <!-- Container (Services Section) -->
+function services(){
+document.getElementById("main").innerHTML = `
   <div id="services" class="container-fluid text-center">
     <h2>SERVICES</h2>
     <h4>What we offer</h4>
@@ -395,91 +322,127 @@
       </div>
     </div>
   </div>
+`
+var element = document.querySelector("#main");
+element.scrollIntoView()  
+}
 
+function engagement()
+{
+  document.getElementById("main").innerHTML =`
+  <div id="engagement" class="container-fluid text-left">
+        <h2>Engagement Models</h2><br>
+        <h4><strong>One-to-One Model</strong></h4><br> 
+        <p>In the One-to-One model, our analysts will be mapped to particular analysts at client end and will work only for that client which benefits our clients as the learning curve for our analysts will be steep in this model. This engagement model is suitable for clients, who have a mix of ongoing and ad-hoc research requirements.</p><br>
+        
+        <h4><strong>Spoke-Hub Model</strong></h4><br>
+        <p>In the Spoke-Hub model, we assign one relationship manager to our client, who receives all research requests from our clients and determines the skill set required for the research project and allocates the work to the most suitable analyst or team of analysts. Our relationship manager will be the one point of contact for all client interactions and will be responsible for quality of deliverable. This engagement model is beneficial for the clients who need resources with various skills set for different research requirements at no extra cost.</p><br>
+       
+        <h4><strong>Ad-hoc Model</strong><br></h4> 
+        <p>We also provide our research services on ad-hoc basis in which research requirements for each project differs. This engagement model is beneficial for the clients who have urgent but one off or low frequency research requirements and do not want to incur sustained costs for these requirements.</p><br>
+        <h4><strong>Apart from above mentioned engagement models, we can also work out other suitable engagement models as per client requirements, if needed.
+        </strong>
+        </h4>
+      </div>`
+      var element = document.querySelector("#main");
+  element.scrollIntoView() 
+}
 
+function infosec()
+{
+  document.getElementById("main").innerHTML =`
+  <div id="infosec" class="container-fluid text-left">
+        <h2>Information Security</h2><br>
+        <p>We implement a strict compliance system with information security and client data confidentiality being our top priorities. Our employees mandatorily sign a non-disclosure agreement and suitable IT Usage policy documents. We limit access to information electronically and physically through appropriate access control mechanisms. We prohibit use of all external storage devices and public email access and monitor employee stock trading and external communications.</p>
+        </div>`
+        var element = document.querySelector("#myPage");
+  element.scrollIntoView() 
+}
+function management()
+{
+  document.getElementById("main").innerHTML = `
+    
+    <div id="management" class="container-fluid ">
+      <h2>Managing Partner</h2><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="./images/krishna_dev.jpg"/>
+        </div>
+        <div class="col-sm-9">
+          <h4><strong>Krishna Dev, CFA, FRM</strong></h4> <br>
+          <p>At VRAL, Krishna is responsible to provide strategic leadership, drive growth, ensure high levels of customer service excellence and spearhead research & analytics team. Prior to VRAL, he has over 11 years of investment research experience in global markets in equity research and investment banking domain. In his career, he has provided an array of equity research, business valuation, management consultancy, and financial advisory services. He worked with some of the world's largest financial research services provider where he served various clients comprising well-known sell-side firms (including bulge bracket investment banks) as well as buy-side firms. Some of his most successful bets in Indian markets were PVR Ltd., Page Industries Ltd., Jubilant Foodworks Ltd., Cinemax India Ltd. (acquired by PVR), and Titan Company Ltd.
+          He is a CFA Charter holder, FRM Charter holder and holds MBA (Finance) degree.</p>
+        </div>
+      </div>`
+      var element = document.querySelector("#main");
+  element.scrollIntoView()  
+}
+function industries()
+{
+  document.getElementById("main").innerHTML = `
+  <div id="industries" class="container-fluid text-center">
+    <h2>INDUSTRIES</h2>
+    <h4>Whom we serve</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="card-columns">
+        <div class="card">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">
 
-  <!-- Container (Gallery Section) -->
-  <div id="gallery" class="container-fluid text-center bg-grey">
-    <h2>Gallery</h2><br>
-    <h4>Workspace</h4>
-    <div class="row text-center slideanim">
-      <div class="col-sm-6">
-        <div class="thumbnail">
-          <img src="./images/front.jpg" alt="img not available">
-          <p><strong>Front</strong></p>
+              Regular Management Accounts for your Business, We serve bookkeeping services for different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="thumbnail">
-          <img src="./images/corridor.jpg" alt="img not available">
-          <p><strong>Corridor</strong></p>
-        </div>
-      </div>
-    </div><br>
-  </div>
-
-
-  <!-- Container (Contact Section) -->
-  <div id="contact" class="container-fluid text-center bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-      <div class="col-sm">
-        <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="fas fa-map-marker-alt"></span> India</p>
-        <p><span class="fas fa-phone"></span> +91 120 232 3669</p>
-        <p><span class="fas fa-envelope"></span> info@valoregaresearch.com </p>
-      </div>
-
     </div>
-
- 
-
-
-
-  <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-      <span class="fas fa-chevron-up"></span>
-    </a>
-    <p>Copyright © 2020 Valorega Accounting Services. All rights reserved.</p>
-  </footer>
-</div>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links in navbar + footer link
-      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-
-      $(window).scroll(function () {
-        $(".slideanim").each(function () {
-          var pos = $(this).offset().top;
-
-          var winTop = $(window).scrollTop();
-          if (pos < winTop + 600) {
-            $(this).addClass("slide");
-          }
-        });
-      });
-    })
+  </div>`
+  var element = document.querySelector("#main");
+  element.scrollIntoView() 
+}
+    
   </script>
-
 </body>
 
 </html>
