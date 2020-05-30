@@ -176,6 +176,7 @@
       color: #fff !important;
       font-size:small;
       letter-spacing: 2px;
+      margin:-10px;
     }
 
     .navbar-nav li a:hover,
