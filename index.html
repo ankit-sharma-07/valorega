@@ -14,7 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/val.css">
+  <link rel="stylesheet" type="text/css" href="./css/val.css">
 </head>
 
 <body id="myPage">
@@ -22,28 +22,28 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-    <a class="navbar-brand" href="javascript:home()">&nbsp VALOREGA ACCOUNTING SERVICES</a>
+    <a class="navbar-brand" href="javascript:doClick('home')">&nbsp VALOREGA ACCOUNTING SERVICES</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link " href="javascript:home()">HOME</a></li>
+        <li class="nav-item"><a class="nav-link " href="javascript:doClick('home')">HOME</a></li>
         <li class=" dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
             ABOUT US
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="javascript:about()">About Us</a>
-            <a class="dropdown-item" href="javascript:engagement()">Engagement Models</a>
-            <a class="dropdown-item" href="javascript:infosec()">Information Security</a>
-            <a class="dropdown-item" href="javascript:management()">Management</a>
-            <a class="dropdown-item" href="javascript:gallery()">Gallery</a>
+            <a class="dropdown-item" href="javascript:doClick('about')">About Us</a>
+            <a class="dropdown-item" href="javascript:doClick('engagement')">Engagement Models</a>
+            <a class="dropdown-item" href="javascript:doClick('infosec')">Information Security</a>
+            <a class="dropdown-item" href="javascript:doClick('management')">Management</a>
+            <a class="dropdown-item" href="javascript:doClick('gallery')">Gallery</a>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="javascript:services()">SERVICES</a></li>
-        <li class="nav-item"><a class="nav-link" href="javascript:industries()">INDUSTRIES</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:doClick('services')">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:doClick('industries')">INDUSTRIES</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -120,14 +120,14 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 
-  <!-- Container (Services Section) -->
+  
 
 
 
-  <!-- Container (Gallery Section) -->
+  
 
 
   <!-- Container (Contact Section) -->
@@ -136,7 +136,7 @@
     <div class="row">
       <div class="col-sm">
         <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="fas fa-map-marker-alt"></span>  611, Tower-A, IT Square,<br>
+        <p><span class="fas fa-map-marker-alt"></span> 611, Tower-A, IT Square,<br>
           Plot No. 21, Knowledge Park - III,<br>
           Greater Noida - 201306,<br>
           Uttar Pradesh, India</p>
@@ -188,13 +188,18 @@
     })
   </script>
   <script>
-    function home()
-{
-  location.reload();
-  var element = document.querySelector("#myPage");
-element.scrollIntoView() 
-}
+    var times =''
+    function doClick(id)
+    {
+      location.hash=id;
+    }
+    function home() {
+      location.reload();
+      var element = document.querySelector("#myPage");
+      element.scrollIntoView()
+    }
     function gallery() {
+
       document.getElementById("main").innerHTML = `<div id="gallery" class="text-center ">
     <h2>Gallery</h2><br>
     <h4>Workspace</h4>
@@ -213,12 +218,12 @@ element.scrollIntoView()
       </div>
     </div><br>
   </div>`
-  var element = document.querySelector("#myPage");
-element.scrollIntoView()  
+      var element = document.querySelector("#myPage");
+      element.scrollIntoView()
     }
 
-function about() {
-   document.getElementById("main").innerHTML = `
+    function about() {
+      document.getElementById("main").innerHTML = `
     
   <div id="about">
     <div class="row">
@@ -260,12 +265,11 @@ function about() {
           services to global clients in our domain.</p>
       </div>
     </div>`
-    var element = document.querySelector("#main");
-element.scrollIntoView()  
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
     }
-
-function services(){
-document.getElementById("main").innerHTML = `
+    function services() {
+      document.getElementById("main").innerHTML = `
   <div id="services" class="text-center">
     <h2>SERVICES</h2>
     <h4>What we offer</h4>
@@ -325,13 +329,12 @@ document.getElementById("main").innerHTML = `
     </div>
   </div>
 `
-var element = document.querySelector("#main");
-element.scrollIntoView()  
-}
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
 
-function engagement()
-{
-  document.getElementById("main").innerHTML =`
+    function engagement() {
+      document.getElementById("main").innerHTML = `
   <div id="engagement" class="text-left">
         <h2>Engagement Models</h2><br>
         <h4><strong>One-to-One Model</strong></h4><br> 
@@ -347,22 +350,20 @@ function engagement()
         </h4>
       </div>`
       var element = document.querySelector("#main");
-  element.scrollIntoView() 
-}
+      element.scrollIntoView()
+    }
 
-function infosec()
-{
-  document.getElementById("main").innerHTML =`
+    function infosec() {
+      document.getElementById("main").innerHTML = `
   <div id="infosec" class="text-left">
         <h2>Information Security</h2><br>
         <p>We implement a strict compliance system with information security and client data confidentiality being our top priorities. Our employees mandatorily sign a non-disclosure agreement and suitable IT Usage policy documents. We limit access to information electronically and physically through appropriate access control mechanisms. We prohibit use of all external storage devices and public email access and monitor employee stock trading and external communications.</p>
         </div>`
-        var element = document.querySelector("#myPage");
-  element.scrollIntoView() 
-}
-function management()
-{
-  document.getElementById("main").innerHTML = `
+      var element = document.querySelector("#myPage");
+      element.scrollIntoView()
+    }
+    function management() {
+      document.getElementById("main").innerHTML = `
     
     <div id="management" >
       <h2>Managing Partner</h2><br>
@@ -377,11 +378,10 @@ function management()
         </div>
       </div>`
       var element = document.querySelector("#main");
-  element.scrollIntoView()  
-}
-function industries()
-{
-  document.getElementById("main").innerHTML = `
+      element.scrollIntoView()
+    }
+    function industries() {
+      document.getElementById("main").innerHTML = `
   <div id="industries" class="text-center">
     <h2>INDUSTRIES</h2>
     <h4>Whom we serve</h4>
@@ -440,10 +440,477 @@ function industries()
       </div>
     </div>
   </div>`
-  var element = document.querySelector("#main");
-  element.scrollIntoView() 
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
+    window.onhashchange = function () {
+
+times = (location.hash.replace('#', ''));
+console.log(times);
+if(times==='')
+{home()}
+else
+{window[times]()}
+
 }
+  </script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Valorega</title>
+  <link rel="shortcut icon" href="./images/logo.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/val.css">
+</head>
+
+<body id="myPage">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <a class="navbar-brand" href="javascript:doClick('home')">&nbsp VALOREGA ACCOUNTING SERVICES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link " href="javascript:doClick('home')">HOME</a></li>
+        <li class=" dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            ABOUT US
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="javascript:doClick('about')">About Us</a>
+            <a class="dropdown-item" href="javascript:doClick('engagement')">Engagement Models</a>
+            <a class="dropdown-item" href="javascript:doClick('infosec')">Information Security</a>
+            <a class="dropdown-item" href="javascript:doClick('management')">Management</a>
+            <a class="dropdown-item" href="javascript:doClick('gallery')">Gallery</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="javascript:doClick('services')">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:doClick('industries')">INDUSTRIES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <br>
+  <div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/c2.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/c3.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/c2.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!-- Container (About Section) -->
+  <div id="main" class="container-fluid">
+    <div id="about">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>Welcome To Valorega</h2><br>
+
+          <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
+            for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
+            CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
+            company’s operating costs, increasing profits and establishing benchmarks for superior governance and
+            conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
+            party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an
+            extensive
+            range of accounting back office services at competitive costs.</p>
+
+          <p>Valorega's finance and accounting outsourcing services are outlined to support the client by setting up
+            compliance and controls, equalizing expenditure and growth, cutting down the cash cycle and increasing the
+            ROI. Size doesn’t make a difference for us & every client is equally important for us. We seek to serve you
+            in
+            the most efficient manner.</p><br>
+          <h2>Why Valorega Accounting Services ?</h2><br>
+
+          <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
+            for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
+            CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
+            company’s operating costs, increasing profits and establishing benchmarks for superior governance and
+            conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
+            party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an
+            extensive
+            range of accounting back office services at competitive costs.</p>
+
+        </div>
+        <div class="col-sm-4">
+          <span class="fas fa-signal logo"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+
+
+  
+
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid text-center ">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="fas fa-map-marker-alt"></span> 611, Tower-A, IT Square,<br>
+          Plot No. 21, Knowledge Park - III,<br>
+          Greater Noida - 201306,<br>
+          Uttar Pradesh, India</p>
+        <p><span class="fas fa-phone"></span> +91 120 232 3669</p>
+        <p><span class="fas fa-envelope"></span> info@valoregaresearch.com </p>
+      </div>
+    </div>
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="fas fa-chevron-up"></span>
+      </a>
+      <p>Copyright © 2020 Valorega Accounting Services. All rights reserved.</p>
+    </footer>
+  </div>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
+  <script>
+    var times =''
+    function doClick(id)
+    {
+      location.hash=id;
+    }
+    function home() {
+      location.reload();
+      var element = document.querySelector("#myPage");
+      element.scrollIntoView()
+    }
+    function gallery() {
+
+      document.getElementById("main").innerHTML = `<div id="gallery" class="text-center ">
+    <h2>Gallery</h2><br>
+    <h4>Workspace</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-6">
+        <div class="thumbnail">
+          <img src="./images/front.jpg" alt="img not available">
+          <p><strong>Front</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="thumbnail">
+          <img src="./images/corridor.jpg" alt="img not available">
+          <p><strong>Corridor</strong></p>
+        </div>
+      </div>
+    </div><br>
+  </div>`
+      var element = document.querySelector("#myPage");
+      element.scrollIntoView()
+    }
+
+    function about() {
+      document.getElementById("main").innerHTML = `
     
+  <div id="about">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Us</h2><br>
+
+        <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
+          for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
+          CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
+          company’s operating costs, increasing profits and establishing benchmarks for superior governance and
+          conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
+          party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an extensive
+          range of accounting back office services at competitive costs.</p>
+
+        <p>Valorega's finance and accounting outsourcing services are outlined to support the client by setting up
+          compliance and controls, equalizing expenditure and growth, cutting down the cash cycle and increasing the
+          ROI. Size doesn’t make a difference for us & every client is equally important for us. We seek to serve you in
+          the most efficient manner.</p><br>
+          <h2>Why Valorega Accounting Services ?</h2><br>
+
+      </div>
+      <div class="col-sm-4">
+        <span class="fas fa-signal logo"></span>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="fas fa-globe-americas logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>Our Values</h2><br>
+        <h4><strong>MISSION:</strong> Our mission is to provide the highest quality value-added research and analytics
+          services to our clients that help them meet their profitable growth objectives and increase their competitive
+          advantage by helping drive productivity and efficiency in accordance with the highest confidentiality
+          standards.</h4><br>
+        <p><strong>VISION:</strong> To be the premier and preferred outsourcing partner in providing rigorous,
+          actionable, high quality, customized, efficient, ethical and cost effective offshore research and analytics
+          services to global clients in our domain.</p>
+      </div>
+    </div>`
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
+    function services() {
+      document.getElementById("main").innerHTML = `
+  <div id="services" class="text-center">
+    <h2>SERVICES</h2>
+    <h4>What we offer</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="card-columns">
+        <div class="card">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">
+
+              Regular Management Accounts for your Business, We serve bookkeeping services for different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+`
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
+
+    function engagement() {
+      document.getElementById("main").innerHTML = `
+  <div id="engagement" class="text-left">
+        <h2>Engagement Models</h2><br>
+        <h4><strong>One-to-One Model</strong></h4><br> 
+        <p>In the One-to-One model, our analysts will be mapped to particular analysts at client end and will work only for that client which benefits our clients as the learning curve for our analysts will be steep in this model. This engagement model is suitable for clients, who have a mix of ongoing and ad-hoc research requirements.</p><br>
+        
+        <h4><strong>Spoke-Hub Model</strong></h4><br>
+        <p>In the Spoke-Hub model, we assign one relationship manager to our client, who receives all research requests from our clients and determines the skill set required for the research project and allocates the work to the most suitable analyst or team of analysts. Our relationship manager will be the one point of contact for all client interactions and will be responsible for quality of deliverable. This engagement model is beneficial for the clients who need resources with various skills set for different research requirements at no extra cost.</p><br>
+       
+        <h4><strong>Ad-hoc Model</strong><br></h4> 
+        <p>We also provide our research services on ad-hoc basis in which research requirements for each project differs. This engagement model is beneficial for the clients who have urgent but one off or low frequency research requirements and do not want to incur sustained costs for these requirements.</p><br>
+        <h4><strong>Apart from above mentioned engagement models, we can also work out other suitable engagement models as per client requirements, if needed.
+        </strong>
+        </h4>
+      </div>`
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
+
+    function infosec() {
+      document.getElementById("main").innerHTML = `
+  <div id="infosec" class="text-left">
+        <h2>Information Security</h2><br>
+        <p>We implement a strict compliance system with information security and client data confidentiality being our top priorities. Our employees mandatorily sign a non-disclosure agreement and suitable IT Usage policy documents. We limit access to information electronically and physically through appropriate access control mechanisms. We prohibit use of all external storage devices and public email access and monitor employee stock trading and external communications.</p>
+        </div>`
+      var element = document.querySelector("#myPage");
+      element.scrollIntoView()
+    }
+    function management() {
+      document.getElementById("main").innerHTML = `
+    
+    <div id="management" >
+      <h2>Managing Partner</h2><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="./images/krishna_dev.jpg"/>
+        </div>
+        <div class="col-sm-9">
+          <h4><strong>Krishna Dev, CFA, FRM</strong></h4> <br>
+          <p>At VRAL, Krishna is responsible to provide strategic leadership, drive growth, ensure high levels of customer service excellence and spearhead research & analytics team. Prior to VRAL, he has over 11 years of investment research experience in global markets in equity research and investment banking domain. In his career, he has provided an array of equity research, business valuation, management consultancy, and financial advisory services. He worked with some of the world's largest financial research services provider where he served various clients comprising well-known sell-side firms (including bulge bracket investment banks) as well as buy-side firms. Some of his most successful bets in Indian markets were PVR Ltd., Page Industries Ltd., Jubilant Foodworks Ltd., Cinemax India Ltd. (acquired by PVR), and Titan Company Ltd.
+          He is a CFA Charter holder, FRM Charter holder and holds MBA (Finance) degree.</p>
+        </div>
+      </div>`
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
+    function industries() {
+      document.getElementById("main").innerHTML = `
+  <div id="industries" class="text-center">
+    <h2>INDUSTRIES</h2>
+    <h4>Whom we serve</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="card-columns">
+        <div class="card">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">
+
+              Regular Management Accounts for your Business, We serve bookkeeping services for different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <span class="fas fa-book logo-small"></span>
+            <h4 class="card-title" align="center">Card title</h4>
+            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
+              different industries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`
+      var element = document.querySelector("#main");
+      element.scrollIntoView()
+    }
+    window.onhashchange = function () {
+
+times = (location.hash.replace('#', ''));
+console.log(times);
+if(times==='')
+{home()}
+else
+{window[times]()}
+
+}
   </script>
 </body>
 
