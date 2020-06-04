@@ -19,6 +19,13 @@
       font-weight: 600;
       margin-bottom: 30px;
     }
+    h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: black;
+      font-weight: 900;
+      margin-bottom: 30px;
+    }
 
     h4 {
       font-size: 19px;
@@ -99,7 +106,7 @@
       font-size: 55px;
       color: #061c3d;
     }
-
+    
     .item h4 {
       font-size: 19px;
       line-height: 1.375em;
@@ -176,7 +183,7 @@
       color: #fff !important;
       font-size:small;
       letter-spacing: 2px;
-      margin:-10px;
+      margin: -10px;
     }
 
     .navbar-nav li a:hover,
@@ -214,7 +221,12 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
     }
-
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color:#061c3d ;
+      color: white;
+    }
     @keyframes slide {
       0% {
         opacity: 0;
@@ -242,14 +254,20 @@
     @media screen and (max-width: 768px) {
       .col-sm-4 {
         text-align: center;
-        margin: 25px 0;
+        margin: 25px 0;}
+        .responsive-iframe {
+          width: 250px;
+          height: 250px;
+          border: none;
+        }
+    
       }
 
       .btn-lg {
         width: 100%;
         margin-bottom: 35px;
       }
-    }
+    
 
     @media screen and (max-width: 480px) {
       .logo {
@@ -260,10 +278,12 @@ height: 200px;
       }
     }
 
-    @media (min-width: 34em) {
-      .card-columns {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-      }
+    @media (min-width:768px) {
+        .card-deck > .card
+        {
+            width: 29%;
+            flex-wrap: wrap;
+            flex: initial; 
+        }
     }
+  

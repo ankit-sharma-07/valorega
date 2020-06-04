@@ -42,7 +42,7 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="javascript:doClick('services')">SERVICES</a></li>
         <li class="nav-item"><a class="nav-link" href="javascript:doClick('industries')">INDUSTRIES</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:doClick('contact')">CONTACT</a></li>
       </ul>
     </div>
 
@@ -128,7 +128,8 @@
             611, Tower-A, IT Square,<br>
             Plot No. 21, Knowledge Park - III,<br>
             Greater Noida - 201306,<br>
-            Uttar Pradesh, India</p>
+            Uttar Pradesh, India</p><br>
+            <iframe class="responsive-iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1sjLxFmoPct8dQUQEs9yj_YnZB-sfEMIl&z=15" width="640" height="480" ></iframe>
 
           
         </div>
@@ -191,7 +192,6 @@
                   <td align="left" valign="middle" height="5"></td>
                   <td width="56" align="left" style="padding-top:10px;"><label> <input type="submit" name="Submit" value="Submit" alt="Submit Form" />
                   </label></td>
-                 <!-- <td width="165" align="left" style="padding-top:10px; padding-left:7px;"><input type="reset" name="reset" value="Reset" alt="Submit Form" style="float:right; margin-right:18px;"/></td>-->
                 </tr>
             </table>
           </form>
@@ -201,15 +201,14 @@
       
       </div>
       
-      <footer class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
-          <span class="fas fa-chevron-up"></span>
-        </a>
-        <p>Copyright © 2020 Valorega Accounting Services. All rights reserved.</p>
-      </footer>
+      
     </div>
   </div>
-
+  <footer class="page-footer">
+    Copyright © 2020 Valorega Accounting Services. All rights reserved.  &nbsp &nbsp &nbsp <a href="#myPage" title="To Top">
+      <span class="fas fa-chevron-up"></span>
+    </a> 
+</footer>
   
   <script>
     $(document).ready(function () {
@@ -247,6 +246,15 @@
       });
     })
   </script>
+  <script src="js/about.js"></script>
+  <script src="js/engagement.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/industries.js"></script>
+  <script src="js/infosec.js"></script>
+  <script src="js/management.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/contact.js"></script>
+ 
   <script>
     var times =''
     function doClick(id)
@@ -256,251 +264,6 @@
     function home() {
       location.reload();
       var element = document.querySelector("#myPage");
-      element.scrollIntoView()
-    }
-    function gallery() {
-
-      document.getElementById("main").innerHTML = `<div id="gallery" class="text-center ">
-    <h2>Gallery</h2><br>
-    <h4>Workspace</h4>
-    <div class="row text-center slideanim">
-      <div class="col-sm-6">
-        <div class="thumbnail">
-          <img src="./images/front.jpg" alt="img not available">
-          <p><strong>Front</strong></p>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="thumbnail">
-          <img src="./images/corridor.jpg" alt="img not available">
-          <p><strong>Corridor</strong></p>
-        </div>
-      </div>
-    </div><br>
-  </div>`
-      var element = document.querySelector("#myPage");
-      element.scrollIntoView()
-    }
-
-    function about() {
-      document.getElementById("main").innerHTML = `
-    
-  <div id="about">
-    <div class="row">
-      <div class="col-sm-8">
-        <h2>About Us</h2><br>
-
-        <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
-          for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
-          CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
-          company’s operating costs, increasing profits and establishing benchmarks for superior governance and
-          conformity to regulations. That is exactly why the majority of them outsource accounting services to a third
-          party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an extensive
-          range of accounting back office services at competitive costs.</p>
-
-        <p>Valorega's finance and accounting outsourcing services are outlined to support the client by setting up
-          compliance and controls, equalizing expenditure and growth, cutting down the cash cycle and increasing the
-          ROI. Size doesn’t make a difference for us & every client is equally important for us. We seek to serve you in
-          the most efficient manner.</p><br>
-          <h2>Why Valorega Accounting Services ?</h2><br>
-
-      </div>
-      <div class="col-sm-4">
-        <span class="fas fa-signal logo"></span>
-      </div>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="fas fa-globe-americas logo slideanim"></span>
-      </div>
-      <div class="col-sm-8">
-        <h2>Our Values</h2><br>
-        <h4><strong>MISSION:</strong> Our mission is to provide the highest quality value-added research and analytics
-          services to our clients that help them meet their profitable growth objectives and increase their competitive
-          advantage by helping drive productivity and efficiency in accordance with the highest confidentiality
-          standards.</h4><br>
-        <p><strong>VISION:</strong> To be the premier and preferred outsourcing partner in providing rigorous,
-          actionable, high quality, customized, efficient, ethical and cost effective offshore research and analytics
-          services to global clients in our domain.</p>
-      </div>
-    </div>`
-      var element = document.querySelector("#main");
-      element.scrollIntoView()
-    }
-    function services() {
-      document.getElementById("main").innerHTML = `
-  <div id="services" class="text-center">
-    <h2>SERVICES</h2>
-    <h4>What we offer</h4>
-    <br>
-    <div class="row slideanim">
-      <div class="card-columns">
-        <div class="card">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">
-
-              Regular Management Accounts for your Business, We serve bookkeeping services for different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-`
-      var element = document.querySelector("#main");
-      element.scrollIntoView()
-    }
-
-    function engagement() {
-      document.getElementById("main").innerHTML = `
-  <div id="engagement" class="text-left">
-        <h2>Engagement Models</h2><br>
-        <h4><strong>One-to-One Model</strong></h4><br> 
-        <p>In the One-to-One model, our analysts will be mapped to particular analysts at client end and will work only for that client which benefits our clients as the learning curve for our analysts will be steep in this model. This engagement model is suitable for clients, who have a mix of ongoing and ad-hoc research requirements.</p><br>
-        
-        <h4><strong>Spoke-Hub Model</strong></h4><br>
-        <p>In the Spoke-Hub model, we assign one relationship manager to our client, who receives all research requests from our clients and determines the skill set required for the research project and allocates the work to the most suitable analyst or team of analysts. Our relationship manager will be the one point of contact for all client interactions and will be responsible for quality of deliverable. This engagement model is beneficial for the clients who need resources with various skills set for different research requirements at no extra cost.</p><br>
-       
-        <h4><strong>Ad-hoc Model</strong><br></h4> 
-        <p>We also provide our research services on ad-hoc basis in which research requirements for each project differs. This engagement model is beneficial for the clients who have urgent but one off or low frequency research requirements and do not want to incur sustained costs for these requirements.</p><br>
-        <h4><strong>Apart from above mentioned engagement models, we can also work out other suitable engagement models as per client requirements, if needed.
-        </strong>
-        </h4>
-      </div>`
-      var element = document.querySelector("#main");
-      element.scrollIntoView()
-    }
-
-    function infosec() {
-      document.getElementById("main").innerHTML = `
-  <div id="infosec" class="text-left">
-        <h2>Information Security</h2><br>
-        <p>We implement a strict compliance system with information security and client data confidentiality being our top priorities. Our employees mandatorily sign a non-disclosure agreement and suitable IT Usage policy documents. We limit access to information electronically and physically through appropriate access control mechanisms. We prohibit use of all external storage devices and public email access and monitor employee stock trading and external communications.</p>
-        </div>`
-      var element = document.querySelector("#myPage");
-      element.scrollIntoView()
-    }
-    function management() {
-      document.getElementById("main").innerHTML = `
-    
-    <div id="management" >
-      <h2>Managing Partner</h2><br>
-      <div class="row">
-        <div class="col-sm-3">
-          <img src="./images/krishna_dev.jpg"/>
-        </div>
-        <div class="col-sm-9">
-          <h4><strong>Krishna Dev, CFA, FRM</strong></h4> <br>
-          <p>At VRAL, Krishna is responsible to provide strategic leadership, drive growth, ensure high levels of customer service excellence and spearhead research & analytics team. Prior to VRAL, he has over 11 years of investment research experience in global markets in equity research and investment banking domain. In his career, he has provided an array of equity research, business valuation, management consultancy, and financial advisory services. He worked with some of the world's largest financial research services provider where he served various clients comprising well-known sell-side firms (including bulge bracket investment banks) as well as buy-side firms. Some of his most successful bets in Indian markets were PVR Ltd., Page Industries Ltd., Jubilant Foodworks Ltd., Cinemax India Ltd. (acquired by PVR), and Titan Company Ltd.
-          He is a CFA Charter holder, FRM Charter holder and holds MBA (Finance) degree.</p>
-        </div>
-      </div>`
-      var element = document.querySelector("#main");
-      element.scrollIntoView()
-    }
-    function industries() {
-      document.getElementById("main").innerHTML = `
-  <div id="industries" class="text-center">
-    <h2>INDUSTRIES</h2>
-    <h4>Whom we serve</h4>
-    <br>
-    <div class="row slideanim">
-      <div class="card-columns">
-        <div class="card">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">
-
-              Regular Management Accounts for your Business, We serve bookkeeping services for different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-        <div class="card ">
-          <div class="card-body text-center">
-            <span class="fas fa-book logo-small"></span>
-            <h4 class="card-title" align="center">Card title</h4>
-            <p class="card-text">Regular Management Accounts for your Business, We serve bookkeeping services for
-              different industries.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>`
-      var element = document.querySelector("#main");
       element.scrollIntoView()
     }
     window.onhashchange = function () {
