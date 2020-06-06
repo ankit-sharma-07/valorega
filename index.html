@@ -29,9 +29,9 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link " href="javascript:doClick('home')">HOME</a></li>
         <li class=" dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          <span class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
             ABOUT US
-          </a>
+          </span>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="javascript:doClick('about')">About Us</a>
             <a class="dropdown-item" href="javascript:doClick('engagement')">Engagement Models</a>
@@ -253,7 +253,7 @@
           }
         });
       });
-      $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-nav>li>a,.navbar-nav>li>div>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
     })
