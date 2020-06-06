@@ -188,7 +188,7 @@
     }
 
 
-    .navbar li a,
+    .navbar li a,.navbar li span,
     .navbar  {
       color: #fff !important;
       letter-spacing: 5px;
