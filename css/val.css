@@ -173,7 +173,8 @@
       font-size: 14px;
     }
 
-    .panel-footer .btn {
+    .panel-footer .btn,
+    .btn-primary {
       margin: 15px 0;
       background-color: #061c3d;
       color: #fff;
@@ -202,6 +203,8 @@
     }
 
     .navbar-nav li a:hover,
+    .navbar-nav li span:hover,
+    .navbar li.active span,
     .navbar-nav li.active a {
       color: #061c3d !important;
       background-color: #005b88 !important;
@@ -277,6 +280,10 @@
         }
     
       }
+      .carousel-caption {
+        top: 20%;
+        font-size:x-large;
+        color: #061c3d;}
 
       .btn-lg {
         width: 100%;

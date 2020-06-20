@@ -28,56 +28,52 @@ function contact() {
       <div class="col-sm-3">
         <div style="background: #061C3D; width:100%; height: 40px;border-radius: 6px;margin-left: 6px;">
           <h4 class="colored" style="color:#fff;padding: 5px 10px 5px 10px;" align="center">Contact Us</h4></div><br>
-        <form name="contact" method="POST" data-netlify="true">
-          <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="170" align="left" valign="middle" >Name :<strong>*</strong></td>
-              <td colspan="2" align="left" valign="middle"><input size="25" name="name" value="" class="boxes" type="text" /></td>
-              </tr>
-            <tr><td height="5" colspan="3" align="left" valign="middle"></td>
-            </tr>
-            <tr>
-              <td width="79" align="left" valign="middle">Company Name :<strong></strong></td>
-              <td colspan="2" align="left" valign="middle"><input size="25" name="company" value="" class="boxes" type="text" /></td>
-              </tr>
-            <tr><td height="5" colspan="3" align="left" valign="middle"></td>
-            </tr>
-            <tr>
-              <td width="79" align="left" valign="middle">Designation :<strong></strong></td>
-              <td colspan="2" align="left" valign="middle"><input size="25" name="designation" value="" class="boxes" type="text" /></td>
-              </tr>
-            <tr><td height="5" colspan="3" align="left" valign="middle"></td>
-            </tr>
-            
-            <tr>
-              <td width="79" align="left" valign="middle">Email Id :<strong>*</strong></td>
-              <td colspan="2" align="left" valign="middle"><input size="25" name="email" value="" class="boxes" type="text" /></td>
-              </tr>
-            <tr><td height="5" colspan="3" align="left" valign="middle"></td>
-            </tr>
-            <tr>
-              <td width="79" align="left" valign="middle">Mob No :<strong>*</strong></td>
-              <td colspan="2" align="left" valign="middle"><input size="25" name="phone" value="" class="boxes" type="text" /></td>
-              </tr>
-            <tr>
-              <td height="5" colspan="3" align="left" valign="middle"></td>
-            </tr>
-            
-             </tr>
-            
-            <tr>
-              <td align="left" valign="middle">Message :*</strong><br />
-                <br /><br /><br /></td>
-              <td colspan="2"  align="left" valign="top"><textarea name="query" cols="18" rows="4" placeholder="How can we help?" style="width:173px; background-color:#fff; border:#A6ABAF 1px solid; color:#aaa;"></textarea> </td>
-              </tr>
-              <tr>
-                <td align="left" valign="middle" height="5"></td>
-                <td width="56" align="left" style="padding-top:10px;"><label> <input type="submit" name="Submit" value="Submit" alt="Submit Form" />
-                </label></td>
-              </tr>
-          </table>
+          <form name="contact" method="POST" data-netlify="true">
+          <div class="form-group row">
+                      <label for="name" class="col-md-3 col-form-label">Name</label>
+                      <div class="col-md-9">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="company" class="col-md-3 col-form-label">Company Name</label>
+                      <div class="col-md-9">
+                          <input type="text" class="form-control" id="company" name="company" placeholder="Company Name">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="designation" class="col-md-3  col-form-label">Designation</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="designation" name="designation" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="emailid" class="col-md-3 col-form-label">Email</label>
+                  <div class="col-md-9">
+                      <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                  </div>
+              </div>
+                  <div class="form-group row">
+                    <label for="telnum" class="col-12 col-md-3 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                    </div>
+                    <div class="col-7 col-md-6">
+                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <label for="message" class="col-md-3 col-form-label">Message</label>
+                  <div class="col-md-9">
+                      <textarea class="form-control" id="message" name="message" rows="5" placeholder="How may we help ?"></textarea>
+                  </div>
+              </div>
+                <div class="form-group row">
+                  <div class="offset-md-3 col-md-10">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+              </div>
         </form>
-
       </div>
     </div>
     
