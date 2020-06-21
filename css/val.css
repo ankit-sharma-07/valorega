@@ -2,8 +2,11 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+      min-height:100%; padding:0; margin:0; position:relative;
     }
+   
 
+    body::after{ content:''; display:block; height:100px; }
     h1 {
       font-size: 45px;
       text-transform: uppercase;
@@ -144,6 +147,7 @@
     }
 
     .panel-footer .btn:hover {
+      
       border: 1px solid #061c3d;
       background-color: #fff !important;
       color: #061c3d;
@@ -239,7 +243,11 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
     }
+    html{ height:100%; }
     footer {
+      position:absolute; 
+  bottom:0; 
+  width:100%;  
       text-align: center;
       padding: 20px;
       background-color:#061c3d ;
@@ -274,22 +282,31 @@
         text-align: center;
         margin: 25px 0;}
         .responsive-iframe {
-          width: 250px;
-          height: 250px;
+          width: 400px;
+          height: 400px;
           border: none;
+          margin-bottom: 30px;
         }
     
       }
-      .carousel-caption {
-        top: 20%;
-        font-size:x-large;
-        color: #061c3d;}
-
       .btn-lg {
         width: 100%;
         margin-bottom: 35px;
       }
-    
+      @media screen and (max-width: 2700px)
+      {
+        .carousel-caption {
+          top: 20%;
+          font-size:50px;
+          color: #061c3d;}
+      }
+      @media screen and (max-width: 1027px)
+      {
+        .carousel-caption {
+          top: 20%;
+          font-size:x-large;
+          color: #061c3d;}
+      }
 
     @media screen and (max-width: 480px) {
       .logo {
@@ -309,7 +326,11 @@ height: 200px;
       background-image: none;
       visibility: hidden;
     }
-
+    .responsive-iframe {
+      width: 250px;
+      height: 250px;
+      border: none;
+    }
     .carousel-control.right,
     .carousel-control.left {
       background-image: none;
