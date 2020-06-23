@@ -1,10 +1,10 @@
 function contact() {
 
     document.getElementById("main").innerHTML =`<div id="contact">
-    <br><h2 class="text-left">CONTACT</h2>
-    <div class="row">
+    <br><h2 class="text-center">CONTACT</h2>
+    <div class="row text-center">
       
-      <div class="col-sm-3">
+      <div class="col-lg-3">
         <h3>Address</h3>
         <p>
           611, Tower-A, IT Square,<br>
@@ -15,17 +15,17 @@ function contact() {
 
         <br><br><br>
       </div>
-      <div class="col-sm-3">
+      <div class="col-lg-3">
         
         <h3>Phone No :</h3>
         <p><span class="fas fa-phone"></span> +91 120 232 3669</p>
       </div>
-      <div class="col-sm-3">          
+      <div class="col-lg-3">          
         <h3>Email Us :</h3>
         <p><span class="fas fa-envelope"></span> info@valoregaresearch.com </p>
         <p><span class="fas fa-envelope"></span> valoregaresearch@gmail.com</p>
       </div>
-      <div class="col-sm-3">
+      <div class="col-lg-3">
         <div style="background: #061C3D; width:100%; height: 40px;border-radius: 6px;margin-left: 6px;">
           <h4 class="colored" style="color:#fff;padding: 5px 10px 5px 10px;" align="center">Contact Us</h4></div><br>
           <form name="contact" method="POST" data-netlify="true">
