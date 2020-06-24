@@ -112,8 +112,7 @@
       color: #061c3d;
     }
     .carousel-caption {
-      top: 40%;
-      bottom: auto;
+      margin-top: 3%;
       font-size: 50px;
       color: #061c3d;
   }
