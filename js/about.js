@@ -3,7 +3,7 @@ function about() {
   
 <div id="about">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-8 text-justify">
       <h2>About Us</h2><br>
 
       <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
@@ -27,18 +27,16 @@ function about() {
   </div>
   </div>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 ">
       <span class="fas fa-globe-americas logo slideanim"></span>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-8 text-justify">
       <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission is to provide the highest quality value-added research and analytics
-        services to our clients that help them meet their profitable growth objectives and increase their competitive
+      <h4><strong>MISSION:</strong> Our mission is to provide the highest quality finance and accounting outsourcing services to our clients that help them meet their profitable growth objectives and increase their competitive
         advantage by helping drive productivity and efficiency in accordance with the highest confidentiality
         standards.</h4><br>
       <p><strong>VISION:</strong> To be the premier and preferred outsourcing partner in providing rigorous,
-        actionable, high quality, customized, efficient, ethical and cost effective offshore research and analytics
-        services to global clients in our domain.</p>
+        actionable, high quality, customized, efficient, ethical and cost effective offshore finance and accounting outsourcing services to global clients in our domain.</p>
     </div>
   </div>`
     var element = document.querySelector("#main");
