@@ -3,10 +3,10 @@ function about() {
   
 <div id="about">
   <div class="row">
-    <div class="col-sm-8 text-justify">
+    <div class="col-sm-8">
       <h2>About Us</h2><br>
 
-      <p>Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
+      <p class="text-justify">Taking into consideration the volatile dynamics of our global economic system, it has become a precondition
         for every business to consolidate their non-core financial services to ascertain a competitive edge. Today,
         CFOs and CPAs across the globe seek out accounting outsourcing firms that can assist them in reducing the
         company’s operating costs, increasing profits and establishing benchmarks for superior governance and
@@ -14,7 +14,7 @@ function about() {
         party company. We, at Valorega, fully grasp this compelling requirement of businesses and provide an extensive
         range of accounting back office services at competitive costs.</p>
 
-      <p>Valorega's finance and accounting outsourcing services are outlined to support the client by setting up
+      <p class="text-justify">Valorega's finance and accounting outsourcing services are outlined to support the client by setting up
         compliance and controls, equalizing expenditure and growth, cutting down the cash cycle and increasing the
         ROI. Size doesn’t make a difference for us & every client is equally important for us. We seek to serve you in
         the most efficient manner.</p><br>

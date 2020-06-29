@@ -1,6 +1,6 @@
 function engagement() {
     document.getElementById("main").innerHTML = `
-<div id="engagement" class="text-left">
+<div id="engagement" class="text-justify">
       <h2>Engagement Models</h2><br>
       <h4><strong>One-to-One Model</strong></h4><br> 
       <p>In the One-to-One model, our analysts will be mapped to particular analysts at client end and will work only for that client which benefits our clients as the learning curve for our analysts will be steep in this model. This engagement model is suitable for clients, who have a mix of ongoing and ad-hoc research requirements.</p><br>
