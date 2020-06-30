@@ -1,7 +1,7 @@
 function industries() {
     document.getElementById("main").innerHTML = `
 <div id="industries" class="text-center">
-  <h2>INDUSTRIES</h2>
+  <h2>Industries</h2>
   <h4>Whom we serve</h4>
   <br>
   <div class="row ">
@@ -31,13 +31,13 @@ function industries() {
               
               <div class="card-body"><span class="fas fa-building logo-small"></span>
                   <h4 class="card-title text-center">Real Estate</h4>
-                  <p class="card-text text-justify">Bookkeeping and accounting are the most crucial but time-consuming tasks for any industry. We have a team of financial experts, accountants, CPAs, and bookkeepers to help our AEC and Real Estate clients with customized accounting solutions.</p>
+                  <p class="card-text text-justify">Bookkeeping and accounting are the most crucial but time-consuming tasks for any industry. We have a team of financial experts, accountants, CPAs, and bookkeepers to help our Real Estate clients with customized accounting solutions.</p>
               </div>
           </div> <div class="card mb-2 mx-auto bg-light border-dark">
               
             <div class="card-body"><span class="fas fa-video logo-small"></span>
                 <h4 class="card-title text-center">Media and Entertainment</h4>
-                <p class="card-text text-justify">Media and entertainment organizations are gradually seeing the impact of new global revenue standards on their accounting and bookkeeping practices, contracts, financial statements, and company policies. At O2I, we aim to enable our clients to strive harder and do more by taking care of their profit streams, and keeping their books in order. Our services are ideal for global media and entertainment outlets looking for a single service provider to streamline their existing accounts. </p>
+                <p class="card-text text-justify">Media and entertainment organizations are gradually seeing the impact of new global revenue standards on their accounting and bookkeeping practices, contracts, financial statements, and company policies. At Valorega, we aim to enable our clients to strive harder and do more by taking care of their profit streams, and keeping their books in order. Our services are ideal for global media and entertainment outlets looking for a single service provider to streamline their existing accounts. </p>
             </div>
         </div> <div class="card mb-2 mx-auto bg-light border-dark">
               

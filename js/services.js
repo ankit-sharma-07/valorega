@@ -1,7 +1,7 @@
 function services() {
     document.getElementById("main").innerHTML = `
 <div id="services" class="text-center">
-  <h2>SERVICES</h2>
+  <h2>Services</h2>
   <h4>What we offer</h4>
   <br>
   <div class="row ">
@@ -18,7 +18,7 @@ function services() {
           <div class="card mb-2 mx-auto bg-light border-dark">
             <div class="card-body"><span class="fas fa-hand-holding-usd logo-small"></span>
                 <h4 class="card-title text-center">Accounts Payable</h4>
-                <p class="card-text text-justify">We have in-depth understanding of the needs of customers in various industries, in addition to extensive experience, and have developed our services based on that.Our accounts payable processing services are cost efficient, flexible, dependable and quick to implement and have been developed through the integration of many technologies.</p>
+                <p class="card-text text-justify">We have in-depth understanding of the needs of customers in various industries, in addition to extensive experience, and have developed our services based on that. Our accounts payable processing services are cost efficient, flexible, dependable and quick to implement and have been developed through the integration of many technologies.</p>
                 <p class="card-text"><small class="text-muted"></small></p>
             </div>
         </div> <div class="card mb-2 mx-auto bg-light border-dark">
@@ -32,7 +32,7 @@ function services() {
               
               <div class="card-body"><span class="fas fa-file-invoice-dollar logo-small"></span>
                   <h4 class="card-title text-center">Financial Reporting</h4>
-                  <p class="card-text text-justify">We make it easier for your external accountants to conduct audits, prepare tax returns for you and to plan your taxes. We can also provide you the full service you require by partnering with audit and tax service providers.We offer the knowledge essential for the survival and growth of your organization through properly presented and accurately prepared management accounts.</p>
+                  <p class="card-text text-justify">We make it easier for your external accountants to conduct audits, prepare tax returns for you and to plan your taxes. We can also provide you the full service you require by partnering with audit and tax service providers. We offer the knowledge essential for the survival and growth of your organization through properly presented and accurately prepared management accounts.</p>
                   <p class="card-text"><small class="text-muted"></small></p>
               </div>
           </div> <div class="card mb-2 mx-auto bg-light border-dark">
